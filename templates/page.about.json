@@ -37,7 +37,7 @@
         "subheading_aXhCec": {
           "type": "subheading",
           "settings": {
-            "subheading": "Welcome to Glozin",
+            "subheading": "Welcome to Melisa",
             "font_size": 15,
             "font_weight": "heading_weight",
             "uppercase": false,
@@ -281,7 +281,7 @@
             "image_link": "",
             "subheading": "",
             "heading": "Designed to Last",
-            "description": "<p>From traditional tailoring to the most informal pieces. Our Glozin collections feature the latest trends with the maximum comfort.<\/p>",
+            "description": "<p>From traditional tailoring to the most informal pieces. Our Melisa collections feature the latest trends with the maximum comfort.<\/p>",
             "first_button_label": "",
             "first_button_link": "",
             "first_button_type": "link",
@@ -371,7 +371,7 @@
         "description_NKGpBk": {
           "type": "description",
           "settings": {
-            "description": "<p><em>\" Glozin will become an example of the responsible business model by doing business with kindness, profit and bringing practical and long—term values to customers, employees, partners, the community for the environment and for shareholders. \"<\/em><\/p>",
+            "description": "<p><em>\" Melisa will become an example of the responsible business model by doing business with kindness, profit and bringing practical and long—term values to customers, employees, partners, the community for the environment and for shareholders. \"<\/em><\/p>",
             "font_size": 18,
             "font_weight": "body_weight",
             "spacing_bottom": 15
@@ -380,7 +380,7 @@
         "subheading_RLCEF7": {
           "type": "subheading",
           "settings": {
-            "subheading": "Carie—Gosée Hera",
+            "subheading": "Claudiu Sas",
             "font_size": 16,
             "font_weight": "heading_weight",
             "uppercase": false,
@@ -390,7 +390,7 @@
         "description_jRcfa7": {
           "type": "description",
           "settings": {
-            "description": "<p>CEO and Founder Glozin Store<\/p>",
+            "description": "<p>CEO and Founder Melisa Store<\/p>",
             "font_size": 14,
             "font_weight": "body_weight",
             "spacing_bottom": 0
@@ -488,7 +488,7 @@
             "image_link": "",
             "subheading": "Our Products",
             "heading": "Timeless Products",
-            "description": "<p>At Glozin, we’re not big on trends. We want you to wear our pieces for years,<br\/> even decades, to come. That’s why we source the finest materials and factories<br\/> for our timeless products— like our Grade-A cashmere sweaters, Italian shoes, <br\/>and Peruvian Pima tees.<\/p>",
+            "description": "<p>At Melisa, we’re not big on trends. We want you to wear our pieces for years,<br\/> even decades, to come. That’s why we source the finest materials and factories<br\/> for our timeless products— like our Grade-A cashmere sweaters, Italian shoes, <br\/>and Peruvian Pima tees.<\/p>",
             "first_button_label": "Learn More",
             "first_button_link": "shopify:\/\/collections\/activewear",
             "first_button_type": "primary",
@@ -572,7 +572,7 @@
         "description_3VEKaL": {
           "type": "description",
           "settings": {
-            "description": "<p>At Glozin, our work culture is deeply rooted in collaboration, innovation and passion. We believe that a positive and<br\/> inclusive work environment is the foundation for creativity and success.<\/p>",
+            "description": "<p>At Melisa, our work culture is deeply rooted in collaboration, innovation and passion. We believe that a positive and<br\/> inclusive work environment is the foundation for creativity and success.<\/p>",
             "font_size": 15,
             "font_weight": "body_weight",
             "spacing_bottom": 10

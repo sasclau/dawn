@@ -320,7 +320,7 @@
         },
         "custom_badge": {
           "label": "맞춤 배지",
-          "info": "[커스텀 뱃지 설정 방법](https://blueskytechco.gitbook.io/glimo-shopify/get-started/import-data/create-required-metafield#id-8.-custom-product) 문서를 참조하세요. "
+          "info": "[커스텀 뱃지 설정 방법](https://neonblast.gitbook.io/melisa/get-started/import-data/create-required-metafield#id-8.-custom-product) 문서를 참조하세요. "
         }
       }
     },
@@ -4362,7 +4362,7 @@
           "header": "색상 견본",
           "user_variants_image_group": {
             "label": "변형 이미지 그룹 사용",
-            "info": "변형 이미지 그룹을 설정하려면 문서를 따르십시오. [자세히 알아보기](https://blueskytechco.gitbook.io/glimo-shopify/product-page-settings/variant-image-group)"
+            "info": "변형 이미지 그룹을 설정하려면 문서를 따르십시오. [자세히 알아보기](https://neonblast.gitbook.io/melisa/product-page-settings/variant-image-group)"
           }
         },
         "frequently_bought_together": {

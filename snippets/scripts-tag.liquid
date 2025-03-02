@@ -6,7 +6,7 @@
   <script src="{{ 'animation.js' | asset_url }}" defer="defer"></script>
 {%- endif %}
 <script src="{{ 'tingle.min.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'theme.js' | asset_url }}"  defer="defer"></script>
+<script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
 {%- case t -%}
   {%- when 'collection' and collection.handle -%}
     <script src="{{ 'collection.js' | asset_url }}" defer="defer"></script>
@@ -17,7 +17,7 @@
     <script src="{{ 'collection.js' | asset_url }}" defer="defer"></script>
 {%- endcase -%}
 <script defer="defer">
-  var glozin_app = {
+  var melisa_app = {
   shop: '{{ shop.permanent_domain }}',
   domain: '{{ shop.domain }}',
   {%- if admin_vi == true -%}

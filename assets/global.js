@@ -40,9 +40,7 @@ var BlsLazyloadImg = (function () {
                 const onImageLoad = (e) => {
                   const target = e.currentTarget;
                   setTimeout(() => {
-                    target
-                      ?.closest('motion-element')
-                      ?.classList.remove('bls-loading-image');
+                    target?.closest('motion-element')?.classList.remove('bls-loading-image');
                     target?.classList.remove('bls-loading-image');
                   }, 600);
                   e.currentTarget.removeEventListener('load', onImageLoad);
@@ -82,27 +80,19 @@ const imageReady = (imageOrArray) => {
   if (!imageOrArray) {
     return Promise.resolve();
   }
-  imageOrArray =
-    imageOrArray instanceof Element ? [imageOrArray] : Array.from(imageOrArray);
+  imageOrArray = imageOrArray instanceof Element ? [imageOrArray] : Array.from(imageOrArray);
   return Promise.all(
     imageOrArray.map((image) => {
       return new Promise((resolve) => {
-        if (
-          (image.tagName === 'IMG' && image.complete) ||
-          !image.offsetParent
-        ) {
+        if ((image.tagName === 'IMG' && image.complete) || !image.offsetParent) {
           setTimeout(() => {
-            image
-              .closest('motion-element')
-              ?.classList.remove('bls-loading-image');
+            image.closest('motion-element')?.classList.remove('bls-loading-image');
             image.classList.remove('bls-loading-image');
             resolve();
           }, 100);
         } else {
           image.addEventListener('load', (e) => {
-            e.currentTarget
-              .closest('motion-element')
-              ?.classList.remove('bls-loading-image');
+            e.currentTarget.closest('motion-element')?.classList.remove('bls-loading-image');
             e.currentTarget.classList.remove('bls-loading-image');
             resolve();
           });
@@ -110,7 +100,6 @@ const imageReady = (imageOrArray) => {
       });
     })
   );
-
 };
 class MotionElement extends HTMLElement {
   constructor() {
@@ -139,11 +128,7 @@ class MotionElement extends HTMLElement {
     motion.inView(
       _this,
       async () => {
-        if (
-          !this.isInstant &&
-          this.mediaElements &&
-          this.hasAttribute('data-image')
-        ) {
+        if (!this.isInstant && this.mediaElements && this.hasAttribute('data-image')) {
           await imageReady(this.mediaElements);
         }
         setTimeout(() => {
@@ -159,9 +144,7 @@ class MotionElement extends HTMLElement {
   }
 
   get Transition() {
-    let transition = this.getAttribute('data-transition')
-      ?.split(',')
-      .map(Number);
+    let transition = this.getAttribute('data-transition')?.split(',').map(Number);
     return transition || [0, 0, 0.3, 1];
   }
 
@@ -193,27 +176,15 @@ class MotionElement extends HTMLElement {
         break;
 
       case 'fade-up':
-        motion.animate(
-          this,
-          { transform: 'translateY(2.5rem)', opacity: 0.01 },
-          { duration: 0 }
-        );
+        motion.animate(this, { transform: 'translateY(2.5rem)', opacity: 0.01 }, { duration: 0 });
         break;
 
       case 'fade-up-sm':
-        motion.animate(
-          this,
-          { transform: 'translateY(1rem)', opacity: 0.01 },
-          { duration: 0 }
-        );
+        motion.animate(this, { transform: 'translateY(1rem)', opacity: 0.01 }, { duration: 0 });
         break;
 
       case 'fade-up-lg':
-        motion.animate(
-          this,
-          { transform: 'translateY(3rem)', opacity: 0.01 },
-          { duration: 0 }
-        );
+        motion.animate(this, { transform: 'translateY(3rem)', opacity: 0.01 }, { duration: 0 });
         break;
 
       case 'zoom-in':
@@ -364,21 +335,15 @@ class SlideSection extends HTMLElement {
     const itemDesktop = _this?.dataset.desktop ? _this?.dataset.desktop : 4;
     var itemTablet = _this?.dataset.tablet ? _this?.dataset.tablet : '';
     const itemMobile = _this?.dataset.mobile ? _this?.dataset.mobile : 1;
-    const direction = _this?.dataset.direction
-      ? _this?.dataset.direction
-      : 'horizontal';
-    var autoplaySpeed = _this?.dataset.autoplaySpeed
-      ? _this?.dataset.autoplaySpeed * 1000
-      : 3000;
+    const direction = _this?.dataset.direction ? _this?.dataset.direction : 'horizontal';
+    var autoplaySpeed = _this?.dataset.autoplaySpeed ? _this?.dataset.autoplaySpeed * 1000 : 3000;
     var speed = _this?.dataset.speed ? _this?.dataset.speed : 400;
     const effect = _this?.dataset.effect ? _this?.dataset.effect : 'slide';
     const row = _this?.dataset.row ? _this?.dataset.row : 1;
     var spacing = _this?.dataset.spacing ? _this?.dataset.spacing : 30;
     const progressbar = _this?.dataset.paginationProgressbar === 'true';
     const autoItem = _this?.dataset.itemMobile === 'true';
-    const arrowCenterimage = _this?.dataset.arrowCenterimage
-      ? _this?.dataset.arrowCenterimage
-      : 0;
+    const arrowCenterimage = _this?.dataset.arrowCenterimage ? _this?.dataset.arrowCenterimage : 0;
     spacing = Number(spacing);
     autoplaySpeed = Number(autoplaySpeed);
     speed = Number(speed);
@@ -417,9 +382,7 @@ class SlideSection extends HTMLElement {
       },
       pagination: {
         clickable: true,
-        el:
-          _this.querySelector('.parent-pagination') ||
-          _this.querySelector('.swiper-pagination'),
+        el: _this.querySelector('.parent-pagination') || _this.querySelector('.swiper-pagination'),
         type: progressbar ? 'progressbar' : 'bullets',
       },
       breakpoints: {
@@ -476,9 +439,7 @@ class SlideSection extends HTMLElement {
             });
           }
           if (arrowCenterimage) {
-            var items_slide = _this.querySelectorAll(
-              '.product-item__media--ratio'
-            );
+            var items_slide = _this.querySelectorAll('.product-item__media--ratio');
             if (items_slide.length != 0) {
               var oH = [];
               items_slide.forEach((e) => {
@@ -540,18 +501,14 @@ class SlideSection extends HTMLElement {
         },
         realIndexChange: function (swiper) {
           if (_this?.dataset.autoplay) {
-            var slide_visibles = _this.querySelectorAll(
-              '.swiper-slide motion-element:not([data-image])'
-            );
+            var slide_visibles = _this.querySelectorAll('.swiper-slide motion-element:not([data-image])');
             slide_visibles?.forEach((slide) => {
               if (!slide.hasAttribute('hold')) {
                 slide?.setAttribute('hold', true);
               }
             });
           } else {
-            var slide_visibles = _this.querySelectorAll(
-              '.swiper-slide motion-element:not([data-image])'
-            );
+            var slide_visibles = _this.querySelectorAll('.swiper-slide motion-element:not([data-image])');
             slide_visibles?.forEach((slide) => {
               if (!slide.hasAttribute('hold')) {
                 slide?.setAttribute('hold', true);
@@ -574,19 +531,13 @@ class SlideSection extends HTMLElement {
         slideChange: function () {
           const index_currentSlide = this.realIndex + 1;
           if (_this.closest('.sec__testimonials-single')) {
-            const allDots = _this
-              .closest('.sec__testimonials-single')
-              .querySelectorAll(`single-item`);
+            const allDots = _this.closest('.sec__testimonials-single').querySelectorAll(`single-item`);
             allDots.forEach((dot) => {
               dot.classList.remove('active');
             });
             _this
               .closest('.sec__testimonials-single')
-              .querySelector(
-                ".testimonials-author-image[data-position='" +
-                  index_currentSlide +
-                  "']"
-              )
+              .querySelector(".testimonials-author-image[data-position='" + index_currentSlide + "']")
               .classList.add('active');
           }
         },
@@ -668,8 +619,7 @@ class SwatchInit extends HTMLElement {
     });
   }
   checkSwatches(e) {
-    const { color, image, customValue, swatchType, optionSwatchValue } =
-      e.dataset;
+    const { color, image, customValue, swatchType, optionSwatchValue } = e.dataset;
     if (color) {
       if (swatchType != 'variant_images') {
         if (optionSwatchValue.length == 0 || optionSwatchValue == null) {
@@ -715,9 +665,8 @@ class SwatchInit extends HTMLElement {
     return s.color == strColor;
   }
   updateOptions() {
-    this.options = Array.from(
-      this.querySelectorAll('.product__color-swatches--js.active'),
-      (select) => select.getAttribute('data-value')
+    this.options = Array.from(this.querySelectorAll('.product__color-swatches--js.active'), (select) =>
+      select.getAttribute('data-value')
     );
     this.variantData.find((variant) => {
       if (this.options.length == 1) {
@@ -756,19 +705,12 @@ class DeferredMedia extends HTMLElement {
     window.pauseAllMedia();
     if (!this.getAttribute('loaded')) {
       const content = document.createElement('div');
-      content.appendChild(
-        this.querySelector('template').content.firstElementChild.cloneNode(true)
-      );
+      content.appendChild(this.querySelector('template').content.firstElementChild.cloneNode(true));
 
       this.setAttribute('loaded', true);
-      const deferredElement = this.appendChild(
-        content.querySelector('video, model-viewer, iframe')
-      );
+      const deferredElement = this.appendChild(content.querySelector('video, model-viewer, iframe'));
       if (focus) deferredElement.focus();
-      if (
-        deferredElement.nodeName == 'VIDEO' &&
-        deferredElement.getAttribute('autoplay')
-      ) {
+      if (deferredElement.nodeName == 'VIDEO' && deferredElement.getAttribute('autoplay')) {
         deferredElement.play();
       }
     }
@@ -781,12 +723,8 @@ function handleErrorMessagePopup(errorMessage = false) {
     .then((response) => response.text())
     .then((responseText) => {
       const html = new DOMParser().parseFromString(responseText, 'text/html');
-      const elementErrorMessage = html.querySelector(
-        '.product-form__error-message-wrapper'
-      );
-      const elementMessage = elementErrorMessage.querySelector(
-        '.product-form__error-message'
-      );
+      const elementErrorMessage = html.querySelector('.product-form__error-message-wrapper');
+      const elementMessage = elementErrorMessage.querySelector('.product-form__error-message');
       elementMessage.textContent = errorMessage;
       showToast(elementErrorMessage.innerHTML, 5000, 'modal-error');
     })
@@ -833,28 +771,19 @@ class SlideLazyLoad {
   triggerListenerJs() {
     this._removeUserInteractionListenerJs(this),
       'loading' === document.readyState
-        ? document.addEventListener(
-            'DOMContentLoaded',
-            this._loadEverythingReadyNow.bind(this)
-          )
+        ? document.addEventListener('DOMContentLoaded', this._loadEverythingReadyNow.bind(this))
         : this._loadEverythingReadyNow();
   }
   _removeUserInteractionListenerJs(e) {
-    this.triggerEventsJs.forEach((t) =>
-      window.removeEventListener(t, e.userEventListenerJs, e.eventOptionsJs)
-    );
+    this.triggerEventsJs.forEach((t) => window.removeEventListener(t, e.userEventListenerJs, e.eventOptionsJs));
   }
   _addUserInteractionListenerJs(e) {
-    this.triggerEventsJs.forEach((t) =>
-      window.addEventListener(t, e.userEventListenerJs, e.eventOptionsJs)
-    );
+    this.triggerEventsJs.forEach((t) => window.addEventListener(t, e.userEventListenerJs, e.eventOptionsJs));
   }
   _preloadAllScriptsJs() {
     document.body.classList.add('swiper-lazy');
     document.body.classList.add('review-lazy');
-    const loadingSwiper = document.querySelectorAll(
-      '.lazy-loading-swiper-after'
-    );
+    const loadingSwiper = document.querySelectorAll('.lazy-loading-swiper-after');
     loadingSwiper.forEach((el) => {
       el.classList.remove('lazy-loading-swiper-after');
       this.initSlide(el);
@@ -874,21 +803,15 @@ class SlideLazyLoad {
     const itemDesktop = _this?.dataset.desktop ? _this?.dataset.desktop : 4;
     var itemTablet = _this?.dataset.tablet ? _this?.dataset.tablet : '';
     const itemMobile = _this?.dataset.mobile ? _this?.dataset.mobile : 1;
-    const direction = _this?.dataset.direction
-      ? _this?.dataset.direction
-      : 'horizontal';
-    var autoplaySpeed = _this?.dataset.autoplaySpeed
-      ? _this?.dataset.autoplaySpeed * 1000
-      : 3000;
+    const direction = _this?.dataset.direction ? _this?.dataset.direction : 'horizontal';
+    var autoplaySpeed = _this?.dataset.autoplaySpeed ? _this?.dataset.autoplaySpeed * 1000 : 3000;
     var speed = _this?.dataset.speed ? _this?.dataset.speed : 400;
     const effect = _this?.dataset.effect ? _this?.dataset.effect : 'slide';
     const row = _this?.dataset.row ? _this?.dataset.row : 1;
     var spacing = _this?.dataset.spacing ? _this?.dataset.spacing : 30;
     const progressbar = _this?.dataset.paginationProgressbar === 'true';
     const autoItem = _this?.dataset.itemMobile === 'true';
-    const arrowCenterimage = _this?.dataset.arrowCenterimage
-      ? _this?.dataset.arrowCenterimage
-      : 0;
+    const arrowCenterimage = _this?.dataset.arrowCenterimage ? _this?.dataset.arrowCenterimage : 0;
     spacing = Number(spacing);
     autoplaySpeed = Number(autoplaySpeed);
     speed = Number(speed);
@@ -927,9 +850,7 @@ class SlideLazyLoad {
       },
       pagination: {
         clickable: true,
-        el:
-          _this.querySelector('.parent-pagination') ||
-          _this.querySelector('.swiper-pagination'),
+        el: _this.querySelector('.parent-pagination') || _this.querySelector('.swiper-pagination'),
         type: progressbar ? 'progressbar' : 'bullets',
       },
       breakpoints: {
@@ -974,9 +895,7 @@ class SlideLazyLoad {
             });
           }
           if (arrowCenterimage) {
-            var items_slide = _this.querySelectorAll(
-              '.product-item__media--ratio'
-            );
+            var items_slide = _this.querySelectorAll('.product-item__media--ratio');
             if (items_slide.length != 0) {
               var oH = [];
               items_slide.forEach((e) => {
@@ -993,9 +912,7 @@ class SlideLazyLoad {
           }
         },
         realIndexChange: function (swiper) {
-          var slide_visibles = _this.querySelectorAll(
-            '.swiper-slide motion-element:not([data-image])'
-          );
+          var slide_visibles = _this.querySelectorAll('.swiper-slide motion-element:not([data-image])');
           slide_visibles?.forEach((slide) => {
             if (!slide.hasAttribute('hold')) {
               slide?.setAttribute('hold', true);
@@ -1005,19 +922,13 @@ class SlideLazyLoad {
         slideChange: function () {
           const index_currentSlide = this.realIndex + 1;
           if (_this.closest('.sec__testimonials-single')) {
-            const allDots = _this
-              .closest('.sec__testimonials-single')
-              .querySelectorAll(`single-item`);
+            const allDots = _this.closest('.sec__testimonials-single').querySelectorAll(`single-item`);
             allDots.forEach((dot) => {
               dot.classList.remove('active');
             });
             _this
               .closest('.sec__testimonials-single')
-              .querySelector(
-                ".testimonials-author-image[data-position='" +
-                  index_currentSlide +
-                  "']"
-              )
+              .querySelector(".testimonials-author-image[data-position='" + index_currentSlide + "']")
               .classList.add('active');
           }
         },
@@ -1032,13 +943,11 @@ class SlideLazyLoad {
       await this._loadScriptsFromListJs(this.delayedScriptsJs.async),
       await this._triggerDOMContentLoadedJs(),
       await this._triggerWindowLoadJs(),
-      window.dispatchEvent(new Event('glozinspeed-allScriptsLoaded'));
+      window.dispatchEvent(new Event('melisaspeed-allScriptsLoaded'));
   }
   async _loadScriptsFromListJs(e) {
     const t = e.shift();
-    return t
-      ? (await this._transformScript(t), this._loadScriptsFromListJs(e))
-      : Promise.resolve();
+    return t ? (await this._transformScript(t), this._loadScriptsFromListJs(e)) : Promise.resolve();
   }
   async _transformScript(e) {
     return (
@@ -1049,8 +958,7 @@ class SlideLazyLoad {
         [...e.attributes].forEach((e) => {
           let t = e.nodeName;
           'type' !== t &&
-            ('data-glozinlazy-type' === t && ((t = 'type'), (n = e.nodeValue)),
-            s.setAttribute(t, e.nodeValue));
+            ('data-melisalazy-type' === t && ((t = 'type'), (n = e.nodeValue)), s.setAttribute(t, e.nodeValue));
         }),
           e.hasAttribute('src')
             ? (s.addEventListener('load', t), s.addEventListener('error', t))
@@ -1062,36 +970,29 @@ class SlideLazyLoad {
   async _triggerDOMContentLoadedJs() {
     (this.domReadyFired = !0),
       await this._requestAnimFrame(),
-      document.dispatchEvent(new Event('glozinspeed-DOMContentLoaded')),
+      document.dispatchEvent(new Event('melisaspeed-DOMContentLoaded')),
       await this._requestAnimFrame(),
-      window.dispatchEvent(new Event('glozinspeed-DOMContentLoaded')),
+      window.dispatchEvent(new Event('melisaspeed-DOMContentLoaded')),
       await this._requestAnimFrame(),
-      document.dispatchEvent(new Event('glozinspeed-readystatechange')),
+      document.dispatchEvent(new Event('melisaspeed-readystatechange')),
       await this._requestAnimFrame(),
-      document.glozinonreadystatechange && document.glozinonreadystatechange();
+      document.melisaonreadystatechange && document.melisaonreadystatechange();
   }
   async _triggerWindowLoadJs() {
     await this._requestAnimFrame(),
-      window.dispatchEvent(new Event('glozinspeed-load')),
+      window.dispatchEvent(new Event('melisaspeed-load')),
       await this._requestAnimFrame(),
-      window.glozinonload && window.glozinonload(),
+      window.melisaonload && window.melisaonload(),
       await this._requestAnimFrame(),
-      window.dispatchEvent(new Event('glozinspeed-pageshow')),
+      window.dispatchEvent(new Event('melisaspeed-pageshow')),
       await this._requestAnimFrame(),
-      window.glozinonpageshow && window.glozinonpageshow();
+      window.melisaonpageshow && window.melisaonpageshow();
   }
   async _requestAnimFrame() {
     return new Promise((e) => requestAnimationFrame(e));
   }
   static run() {
-    const e = new SlideLazyLoad([
-      'keydown',
-      'mousemove',
-      'touchmove',
-      'touchstart',
-      'touchend',
-      'wheel',
-    ]);
+    const e = new SlideLazyLoad(['keydown', 'mousemove', 'touchmove', 'touchstart', 'touchend', 'wheel']);
     e._addUserInteractionListenerJs(e);
   }
 }

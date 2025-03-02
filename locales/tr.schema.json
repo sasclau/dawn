@@ -7,7 +7,7 @@
         "content": "[Satın alma kodum nerede?](https://help.market.envato.com/hc/en-us/articles/202822600-where-Is-My-Purchase-Code-)"
       },
       "buy_now": {
-        "content": "[Glozin lisansı satın alın!](xx)"
+        "content": "[Melisa lisansı satın alın!](xx)"
       },
       "purchase_code_action": {
         "label": "Satın alma işlemi",
@@ -320,7 +320,7 @@
         },
         "custom_badge": {
           "label": "Özel rozet",
-          "info": "[Özel rozetin nasıl ayarlanacağını](https://blueskytechco.gitbook.io/glimo-shopify/get-started/import-data/create-required-metafield#id-8.-custom-product) görmek için lütfen belgeyi takip edin. "
+          "info": "[Özel rozetin nasıl ayarlanacağını](https://neonblast.gitbook.io/melisa/get-started/import-data/create-required-metafield#id-8.-custom-product) görmek için lütfen belgeyi takip edin. "
         }
       }
     },
@@ -4360,7 +4360,7 @@
           "header": "Renk örnekleri",
           "user_variants_image_group": {
             "label": "Varyant resim grubunu kullan",
-            "info": "Varyant resim grubunu ayarlamak için lütfen belgeyi takip edin [Daha fazlasını okuyun](https://blueskytechco.gitbook.io/glimo-shopify/product-page-settings/variant-image-group)"
+            "info": "Varyant resim grubunu ayarlamak için lütfen belgeyi takip edin [Daha fazlasını okuyun](https://neonblast.gitbook.io/melisa/product-page-settings/variant-image-group)"
           }
         },
         "frequently_bought_together": {

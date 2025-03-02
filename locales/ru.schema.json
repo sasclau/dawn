@@ -320,7 +320,7 @@
         },
         "custom_badge": {
           "label": "Пользовательский значок",
-          "info": "Пожалуйста, следуйте документу, чтобы узнать [как настроить собственный значок] (https://blueskytechco.gitbook.io/glimo-shopify/get-started/import-data/create-required-metafield#id-8.-custom-product "
+          "info": "Пожалуйста, следуйте документу, чтобы узнать [как настроить собственный значок] (https://neonblast.gitbook.io/melisa/get-started/import-data/create-required-metafield#id-8.-custom-product "
         }
       }
     },
@@ -4360,7 +4360,7 @@
           "header": "Образцы цвета",
           "user_variants_image_group": {
             "label": "Использовать группу изображений вариантов",
-            "info": "Следуйте документу, чтобы настроить группу изображений вариантов. [Подробнее](https://blueskytechco.gitbook.io/glimo-shopify/product-page-settings/variant-image-group)"
+            "info": "Следуйте документу, чтобы настроить группу изображений вариантов. [Подробнее](https://neonblast.gitbook.io/melisa/product-page-settings/variant-image-group)"
           }
         },
         "frequently_bought_together": {

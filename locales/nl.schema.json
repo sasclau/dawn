@@ -7,7 +7,7 @@
         "content": "[Waar is mijn aankoopcode?](https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-)"
       },
       "buy_now": {
-        "content": "[Koop een Glozin-licentie!](xx)"
+        "content": "[Koop een Melisa-licentie!](xx)"
       },
       "purchase_code_action": {
         "label": "Aankoop actie",
@@ -320,7 +320,7 @@
         },
         "custom_badge": {
           "label": "Aangepaste badge",
-          "info": "Volg het document om te zien [hoe u een aangepaste badge instelt](https://blueskytechco.gitbook.io/glimo-shopify/get-started/import-data/create-required-metafield#id-8.-custom-product "
+          "info": "Volg het document om te zien [hoe u een aangepaste badge instelt](https://neonblast.gitbook.io/melisa/get-started/import-data/create-required-metafield#id-8.-custom-product "
         }
       }
     },
@@ -4360,7 +4360,7 @@
           "header": "Kleurstalen",
           "user_variants_image_group": {
             "label": "Gebruik varianten afbeeldingsgroep",
-            "info": "Volg het document om de variantenafbeeldingsgroep in te stellen [Lees meer](https://blueskytechco.gitbook.io/glimo-shopify/product-page-settings/variant-image-group)"
+            "info": "Volg het document om de variantenafbeeldingsgroep in te stellen [Lees meer](https://neonblast.gitbook.io/melisa/product-page-settings/variant-image-group)"
           }
         },
         "frequently_bought_together": {

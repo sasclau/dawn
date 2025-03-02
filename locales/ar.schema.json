@@ -7,7 +7,7 @@
         "content": "[أين يوجد رمز الشراء الخاص بي؟](https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-)"
       },
       "buy_now": {
-        "content": "[شراء ترخيص Glozin!](xx)"
+        "content": "[شراء ترخيص Melisa!](xx)"
       },
       "purchase_code_action": {
         "label": "إجراء الشراء",
@@ -320,7 +320,7 @@
         },
         "custom_badge": {
           "label": "شارة مخصصة",
-          "info": "يرجى اتباع المستند لمعرفة [كيفية إعداد شارة مخصصة](https://blueskytechco.gitbook.io/glimo-shopify/get-started/import-data/create-required-metafield#id-8.-custom-product "
+          "info": "يرجى اتباع المستند لمعرفة [كيفية إعداد شارة مخصصة](https://neonblast.gitbook.io/melisa/get-started/import-data/create-required-metafield#id-8.-custom-product "
         }
       }
     },
@@ -4362,7 +4362,7 @@
           "header": "عينات اللون",
           "user_variants_image_group": {
             "label": "استخدام مجموعة الصور المتغيرات",
-            "info": "يرجى اتباع المستند لإعداد مجموعة صور المتغيرات [اقرأ المزيد](https://blueskytechco.gitbook.io/glimo-shopify/product-page-settings/variant-image-group)"
+            "info": "يرجى اتباع المستند لإعداد مجموعة صور المتغيرات [اقرأ المزيد](https://neonblast.gitbook.io/melisa/product-page-settings/variant-image-group)"
           }
         },
         "frequently_bought_together": {

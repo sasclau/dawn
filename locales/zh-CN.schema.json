@@ -7,7 +7,7 @@
         "content": "[我的购买代码在哪里？](https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-)"
       },
       "buy_now": {
-        "content": "[购买 Glozin 许可证！](xx)"
+        "content": "[购买 Melisa 许可证！](xx)"
       },
       "purchase_code_action": {
         "label": "购买行动",
@@ -320,7 +320,7 @@
         },
         "custom_badge": {
           "label": "定制徽章",
-          "info": "请按照文档查看【如何设置自定义徽章】(https://blueskytechco.gitbook.io/glimo-shopify/get-started/import-data/create-required-metafield#id-8.-custom-product "
+          "info": "请按照文档查看【如何设置自定义徽章】(https://neonblast.gitbook.io/melisa/get-started/import-data/create-required-metafield#id-8.-custom-product "
         }
       }
     },
@@ -4360,7 +4360,7 @@
           "header": "色样",
           "user_variants_image_group": {
             "label": "使用变体图像组",
-            "info": "请按照文档设置变体图像组 [阅读更多](https://blueskytechco.gitbook.io/glimo-shopify/product-page-settings/variant-image-group)"
+            "info": "请按照文档设置变体图像组 [阅读更多](https://neonblast.gitbook.io/melisa/product-page-settings/variant-image-group)"
           }
         },
         "frequently_bought_together": {

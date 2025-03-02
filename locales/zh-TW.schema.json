@@ -7,7 +7,7 @@
         "content": "[我的購買代碼在哪裡？"
       },
       "buy_now": {
-        "content": "[購買 Glozin 許可證！"
+        "content": "[購買 Melisa 許可證！"
       },
       "purchase_code_action": {
         "label": "購買行動",
@@ -320,7 +320,7 @@
         },
         "custom_badge": {
           "label": "客製化徽章",
-          "info": "請依照文件查看【如何設定自訂徽章】(https://blueskytechco.gitbook.io/glimo-shopify/get-started/import-data/create-required-metafield#id-8.-custom-product -徽章）"
+          "info": "請依照文件查看【如何設定自訂徽章】(https://neonblast.gitbook.io/melisa/get-started/import-data/create-required-metafield#id-8.-custom-product -徽章）"
         }
       }
     },
@@ -4360,7 +4360,7 @@
           "header": "色樣",
           "user_variants_image_group": {
             "label": "使用變體影像組",
-            "info": "請依照文件設定變體影像群組 [閱讀更多](https://blueskytechco.gitbook.io/glimo-shopify/product-page-settings/variant-image-group)"
+            "info": "請依照文件設定變體影像群組 [閱讀更多](https://neonblast.gitbook.io/melisa/product-page-settings/variant-image-group)"
           }
         },
         "frequently_bought_together": {

@@ -7,7 +7,7 @@
         "content": "[購入コードはどこにありますか?](https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-)"
       },
       "buy_now": {
-        "content": "[Glozin ライセンスを購入!](xx)"
+        "content": "[Melisa ライセンスを購入!](xx)"
       },
       "purchase_code_action": {
         "label": "購入アクション",
@@ -320,7 +320,7 @@
         },
         "custom_badge": {
           "label": "カスタムバッジ",
-          "info": "[カスタム バッジの設定方法](https://blueskytechco.gitbook.io/glimo-shopify/get-started/import-data/create-required-metafield#id-8.-custom-product) を参照するには、ドキュメントに従ってください。 "
+          "info": "[カスタム バッジの設定方法](https://neonblast.gitbook.io/melisa/get-started/import-data/create-required-metafield#id-8.-custom-product) を参照するには、ドキュメントに従ってください。 "
         }
       }
     },
@@ -4362,7 +4362,7 @@
           "header": "色見本",
           "user_variants_image_group": {
             "label": "バリアント画像グループを使用する",
-            "info": "ドキュメントに従ってバリアント画像グループを設定してください [続きを読む](https://blueskytechco.gitbook.io/glimo-shopify/product-page-settings/variant-image-group)"
+            "info": "ドキュメントに従ってバリアント画像グループを設定してください [続きを読む](https://neonblast.gitbook.io/melisa/product-page-settings/variant-image-group)"
           }
         },
         "frequently_bought_together": {

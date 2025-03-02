@@ -7,7 +7,7 @@
         "content": "[Hvor er kjøpskoden min?](https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-)"
       },
       "buy_now": {
-        "content": "[Kjøp Glozin-lisens!](xx)"
+        "content": "[Kjøp Melisa-lisens!](xx)"
       },
       "purchase_code_action": {
         "label": "Kjøpshandling",
@@ -320,7 +320,7 @@
         },
         "custom_badge": {
           "label": "Egendefinert merke",
-          "info": "Følg dokumentet for å se [hvordan konfigurerer du tilpasset merke](https://blueskytechco.gitbook.io/glimo-shopify/get-started/import-data/create-required-metafield#id-8.-custom-product "
+          "info": "Følg dokumentet for å se [hvordan konfigurerer du tilpasset merke](https://neonblast.gitbook.io/melisa/get-started/import-data/create-required-metafield#id-8.-custom-product "
         }
       }
     },
@@ -4360,7 +4360,7 @@
           "header": "Fargeprøver",
           "user_variants_image_group": {
             "label": "Bruk varianter bildegruppe",
-            "info": "Følg dokumentet for å sette opp varianter bildegruppe [Les mer](https://blueskytechco.gitbook.io/glimo-shopify/product-page-settings/variant-image-group)"
+            "info": "Følg dokumentet for å sette opp varianter bildegruppe [Les mer](https://neonblast.gitbook.io/melisa/product-page-settings/variant-image-group)"
           }
         },
         "frequently_bought_together": {
