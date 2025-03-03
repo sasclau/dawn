@@ -226,6 +226,9 @@ a.hover-heading-color:hover {
 .bg-dark {
   background-color: var(--color-dark);
 }
+.bg-red {
+  background-image: linear-gradient(in hsl longer hue 90deg, red 0 0);
+}
 .underline {
   text-decoration-line: underline;
   text-underline-offset: 3px;
@@ -259,6 +262,9 @@ a.hover-heading-color:hover {
 }
 .shadow {
   box-shadow: var(--shadow, 0px 30px 0px rgba(0, 0, 0, 0.08));
+}
+.shadow-1 {
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3)
 }
 .border-bottom-dashed {
   border-bottom: 1px dashed var(--color-border);
@@ -784,6 +790,14 @@ picture {
 .rounded-style .rounded-15 {
   border-radius: 15px;
 }
+.rounded-style .rounded-20 {
+  border-radius: 20px;
+}
+
+.border1 {
+  border: 1px solid #000;
+}
+
 .flex-cols {
   --col: var(--col-number);
   --gap: var(--col-gap);
@@ -1510,6 +1524,10 @@ header.active li.visible .submenu {
   text-transform: uppercase;
 }
 
+.centered {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 .absolute {
   position: absolute;
 }
@@ -1562,6 +1580,9 @@ header.active li.visible .submenu {
 .right-30 {
   right: 3rem;
 }
+.right-40 {
+  right: 4rem;
+}
 .bottom-0 {
   bottom: 0;
 }
@@ -1576,6 +1597,9 @@ header.active li.visible .submenu {
 }
 .bottom-30 {
   bottom: 3rem;
+}
+.bottom-40 {
+  bottom: 4rem;
 }
 .left-0 {
   left: 0;
@@ -1765,6 +1789,32 @@ header.active li.visible .submenu {
 .border-animation:is(:hover, .active) {
   background-size: 100% var(--height, 1px);
 }
+
+
+/*Custom Style NeonBlast*/
+
+.triangle {
+  --r:20px; /* border radius */
+
+  width: 45px;
+  aspect-ratio: 1/cos(30deg);
+  --_g:calc(tan(60deg)*var(--r)) bottom var(--r),#000 98%,#0000 101%;
+  -webkit-mask:
+    conic-gradient(from -30deg at 50% calc(200% - 3*var(--r)/2),#000 60deg,#0000 0)
+     0 100%/100% calc(100% - 3*var(--r)/2) no-repeat,
+    radial-gradient(var(--r) at 50% calc(2*var(--r)),#000 98%,#0000 101%),
+    radial-gradient(var(--r) at left  var(--_g)),
+    radial-gradient(var(--r) at right var(--_g));
+  clip-path: polygon(50% 0,100% 100%,0 100%);
+}
+
+.bg-gradient1 {
+  background-color: #FFDEE9;
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+}
+
+
+
 @media (min-width: 576px) {
   :is(.grid-cols, .flex-cols) {
     --col: var(--col-tablet, var(--col-desktop));

@@ -1,4 +1,4 @@
-/* Some css class in defined in critical css */
+/* Some css class in defined in neonblast css */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -414,6 +414,10 @@ input[type='checkbox']:checked + .checkmark:before {
 .transition {
   transition: var(--transition);
   -webkit-transition: var(--transition);
+}
+.transition1 {
+  transition: var(--transition1);
+  -webkit-transition: var(--transition1);
 }
 .transition-popup {
   transition: var(--transition-popup);
